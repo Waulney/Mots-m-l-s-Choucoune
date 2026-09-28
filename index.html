@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mots Mêlés - Choucoune</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    
+    <!-- EN-TÊTE -->
+    <header>
+      <div class="brand">
+        <img 
+          src="https://flagcdn.com/w40/ht.png" 
+          alt="Drapeau d'Haïti" 
+          class="flag-icon" 
+        />
+        <h1 id="level-title">CHOUCOUNE</h1>
+      </div>
+
+      <div class="controls">
+        <select id="select-level" aria-label="Sélectionner un niveau"></select>
+        <button id="theme-toggle" aria-label="Changer le thème">🌓</button>
+      </div>
+    </header>
+
+    <!-- ZONE DE JEU PRINCIPALE -->
+    <main class="main-content">
+      
+      <!-- GRILLE DE JEU -->
+      <section id="grid-container" aria-label="Grille de mots mêlés"></section>
+
+      <!-- BARRE LATÉRALE / LISTE DES MOTS -->
+      <aside class="sidebar">
+        <h2>Mots à trouver</h2>
+        <ul id="words-list"></ul>
+      </aside>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
